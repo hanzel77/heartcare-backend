@@ -110,7 +110,7 @@ def get_user(user_id):
             'password': user.password,
             'age': user.age,
             'sex': user.sex,
-            'height_cm': user.height_cm,
+            'heigh+t_cm': user.height_cm,
             'weight_kg': user.weight_kg,
             'smoking_history': user.smoking_history,
             'skin_cancer': user.skin_cancer,
@@ -119,6 +119,8 @@ def get_user(user_id):
             'arthritis': user.arthritis,
             'depression': user.depression    
         }, 200)
+    else:
+        return jsonify({"error": "User not found."}), 404
     
 @app.route("/api/user/<string:user_id>", methods=["PUT"])
 def update_user(user_id):
