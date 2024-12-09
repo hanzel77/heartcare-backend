@@ -14,6 +14,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+@app.route('/')
+def index():
+    return jsonify({"message": "HeartCare Backend is running!"}), 200
 
 @app.route('/test-db', methods=['GET'])
 def test_db_connection():
