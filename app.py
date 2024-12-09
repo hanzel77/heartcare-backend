@@ -110,7 +110,7 @@ def get_user(user_id):
             'password': user.password,
             'age': user.age,
             'sex': user.sex,
-            'heigh+t_cm': user.height_cm,
+            'height_cm': user.height_cm,
             'weight_kg': user.weight_kg,
             'smoking_history': user.smoking_history,
             'skin_cancer': user.skin_cancer,
