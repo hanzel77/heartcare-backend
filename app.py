@@ -7,7 +7,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:@localhost/heartcare'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:fWjPJdnLkrBjLzRzfQhHhLUlvaIsDHjv@mysql.railway.internal:3306/heartcare'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
